@@ -1,14 +1,21 @@
 .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   background-color: #eef0e4;
   border-radius: 10px;
   padding: 20px;
   max-width: 400px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border: 1px solid #777;
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  gap: 10px;
 }
 
 .item {
@@ -18,35 +25,35 @@
 }
 
 .avatar {
+  display: block;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
 }
 
 .name {
+  display: block;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 .tag {
+  display: block;
   font-size: 18px;
   color: #2e2828;
-  margin-bottom: 10px;
 }
 
 .location {
+  display: block;
   font-size: 16px;
   color: #3d2a2a;
-  margin-bottom: 20px;
 }
 
 .stats {
   display: flex;
+  gap: 30px;
   justify-content: space-between;
-  margin: 0;
   padding: 8px 45px;
 }
 

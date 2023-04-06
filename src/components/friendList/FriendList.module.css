@@ -1,0 +1,13 @@
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+
+  padding: 0;
+  max-width: fit-content;
+  min-width: 250px;
+  /* margin: 0 auto; */
+}
