@@ -1,40 +1,12 @@
-// import css from './TransactionHistory.module.css';
-let tableHeads = [];
+import css from './TransactionHistory.module.css';
 
-const TableHead = ({ transactions }) => (
-  <thead>
-    <tr>
-      {Object.keys(transactions[0]).map(head => {
-        tableHeads.push(head);
-        return <th key={head}>{head}</th>;
-      })}
-    </tr>
-  </thead>
-);
-
-const TableBody = ({ transactions }) => (
-  <thead>
-    <tr></tr>
-  </thead>
-);
+import TableHead from './TableHead';
+import TableBody from './TableBody';
 
 const TransactionHistory = ({ transactions }) => (
-  <table className="transaction-history">
+  <table className={css.table}>
     <TableHead transactions={transactions} />
-
-    <tbody>
-      <TableBody transactions={transactions} />
-      <tr>
-        <td>Invoice</td>
-        <td>125</td>
-        <td>USD</td>
-      </tr>
-      <tr>
-        <td>Withdrawal</td>
-        <td>85</td>
-        <td>USD</td>
-      </tr>
-    </tbody>
+    <TableBody transactions={transactions} />
   </table>
 );
 

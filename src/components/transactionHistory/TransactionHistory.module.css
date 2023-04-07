@@ -1,0 +1,25 @@
+.table {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #14b6d3;
+  color: #f2f2f2;
+  font-weight: bold;
+  padding: 8px 24px;
+  border: 1px solid #ccc;
+}
+
+.table td {
+  padding: 8px 24px;
+  border: 1px solid #ccc;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
