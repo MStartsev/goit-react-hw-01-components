@@ -30,16 +30,15 @@ img {
   margin: 0;
 }
 
-.root {
-  position: relative;
-}
-
 .container {
+  max-width: 1200px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
   padding: 30px 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1145px) {

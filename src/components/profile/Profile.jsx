@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+import StatsList from './StatsList';
 import css from './profile.module.css';
 
 const Profile = ({ username, tag, location, avatar, stats }) => (
@@ -21,13 +23,10 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
 
 export default Profile;
 
-const StatsList = stats => (
-  <ul className={css.stats}>
-    {Object.entries(stats).map(([key, value]) => (
-      <li key={key} className={css.item}>
-        <span className={css.label}>{key}</span>
-        <span className={css.quantity}>{value}</span>
-      </li>
-    ))}
-  </ul>
-);
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};

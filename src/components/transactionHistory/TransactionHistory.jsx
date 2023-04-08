@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
 import TableHead from './TableHead';
@@ -11,3 +12,14 @@ const TransactionHistory = ({ transactions }) => (
 );
 
 export default TransactionHistory;
+
+TransactionHistory.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};
